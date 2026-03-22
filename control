@@ -1,0 +1,8 @@
+Package: com.susu.springaction
+Name: SpringAction
+Version: 1.0.0
+Architecture: iphoneos-arm
+Description: 桌面交互动画
+Maintainer: SuSu
+Author: SuSu
+Section: Tweaks 
