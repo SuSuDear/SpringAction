@@ -1,13 +1,10 @@
 #import <UIKit/UIKit.h>
 
-%hook SBFluidSwitcherAnimationSettings
+%hook MMSafeModeMgr
 
-- (void)setHomeScreenScaleInApplication:(CGFloat)scale {
-    %orig(0.3);
-}
-
-- (void)setHomeScreenScaleInSwitcher:(CGFloat)scale {
-    %orig(0.9);
+- (BOOL)shouldEnterSafeMode {
+    return NO;
 }
 
 %end
+
