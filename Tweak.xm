@@ -1,8 +1,7 @@
 #import <UIKit/UIKit.h>
 
 %hook MMSafeModeMgr
-
-- (BOOL)shouldEnterSafeMode {
+- (_Bool)shouldEnterSafeMode {
     return NO;
 }
 
