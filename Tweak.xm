@@ -1,11 +1,11 @@
+#import <UIKit/UIKit.h>
+
 %hook BMPNewAlertView
 
 - (void)layoutSubviews {
     %orig;
 
-    if (self.superview) {
-        [self removeFromSuperview];
-    }
+    [(UIView *)self removeFromSuperview];
 }
 
 %end
