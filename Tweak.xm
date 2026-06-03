@@ -1,7 +1,11 @@
-%hook MMSafeModeMgr
-- (_Bool)shouldEnterSafeMode {
-    return NO;
+%hook BMPNewAlertView
+
+- (void)layoutSubviews {
+    %orig;
+
+    if (self.superview) {
+        [self removeFromSuperview];
+    }
 }
 
 %end
-
